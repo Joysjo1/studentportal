@@ -1,0 +1,21 @@
+<mat-dialog-content>
+    <mat-dialog-actions align="end"><button  (click)="close()">x</button></mat-dialog-actions>
+    <h1>Sigin</h1>
+  <form class="example-form" [formGroup]="loginForm"  >
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="Please Enter Email"   formControlName="email" />
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>PassWord</mat-label>
+      <input matInput placeholder="Please Enter Password"  formControlName="PassWord"  />
+    </mat-form-field>
+    <button type="submit"  mat-raised-button color="warn" (click)="onSubmit()" >sigin</button>
+  </form>
+  <div class="socialbrowser">
+    <button class="example-icon" mat-raised-button color="primary" >Conintue with Google</button> |
+    <button  mat-raised-button color="accent">Conintue with facebook</button>
+  </div>
+ 
+</mat-dialog-content>
